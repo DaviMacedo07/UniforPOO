@@ -25,12 +25,12 @@ public class List42_EvenOrOdd {
         for (int i = 0; i < 19; i++) {
             System.out.print(numbers[i] + " ,");
         }
-        System.out.println("Pares: \n");
+        System.out.println("Pares: ");
         for (int i = 0; i <= countPares ;i++) {
             System.out.print(pares[i] + " ,");
         }
 
-        System.out.println("Impares: \n");
+        System.out.println("Impares: ");
         for (int i = 0; i <= countImpares; i++) {
             System.out.print(impares[i] + " ,");
         }
