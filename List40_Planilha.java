@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class List22_Planilha {
+public class List40_Planilha {
 
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);

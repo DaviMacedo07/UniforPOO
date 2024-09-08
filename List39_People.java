@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class List21_People {
+public class List39_People {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         int qtdPessoas;

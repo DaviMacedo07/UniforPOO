@@ -1,6 +1,6 @@
 import  java.util.Scanner;
 
-public class List23_Triangulos {
+public class List41_Triangulos {
     public boolean VerificaTriangulo(int ladoA, int ladoB, int ladoC) {
         if (ladoA + ladoB > ladoC && ladoA + ladoC > ladoB && ladoB + ladoC > ladoA) {
             System.out.println("Atendem a regra , é um triângulo.");
@@ -31,7 +31,7 @@ public class List23_Triangulos {
         System.out.println("Digite o lado C: ");
         int ladoC = scanner.nextInt();
 
-        List23_Triangulos triangulos = new List23_Triangulos();
+        List41_Triangulos triangulos = new List41_Triangulos();
         if (triangulos.VerificaTriangulo(ladoA, ladoB, ladoC)) {
             triangulos.TipoTriangulo(ladoA, ladoB, ladoC);
         }

@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class List20_Temperature {
+public class List38_Temperature {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         System.out.println("Digite uma certa temperatura: ");

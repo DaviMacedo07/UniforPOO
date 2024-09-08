@@ -1,5 +1,5 @@
 import java.util.Scanner;
-public class List26_PrimeNumbers {
+public class List35_PrimeNumbers {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         System.out.println("Digite um número para verificar se ele é primo ou não OBS: Inteiro");
