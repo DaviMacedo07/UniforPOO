@@ -20,16 +20,21 @@ public class Circulo {
         this.ponto = ponto;
     }
 
-    public Circulo(double raioCirc) {
+    public Circulo(double raioCirc , double ponto) {
         this.raioCirc = raioCirc;
         this.ponto = ponto;
     }
 
-    public void inflar() {
-
-    }
-
     public double calcularArea() {
         return Math.PI * Math.pow(this.raioCirc, 2);
+    }
+
+    public double inflar(double valor) {
+        return this.raioCirc += valor;
+    }
+    public double desinflar(double valor) {
+        return this.raioCirc -= valor;
+
+
     }
 }

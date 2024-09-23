@@ -1,3 +1,5 @@
+package AV2;
+
 import java.util.Scanner;
 
 public class List34_10Numbers {

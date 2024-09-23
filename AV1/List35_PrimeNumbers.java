@@ -1,3 +1,5 @@
+package AV1;
+
 import java.util.Scanner;
 public class List35_PrimeNumbers {
     public static void main(String[] args) {
