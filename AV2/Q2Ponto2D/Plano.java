@@ -1,12 +1,12 @@
 package AV2.Q2Ponto2D;
 
 public class Plano {
-    public double x;
-    public double y;
+    private double x;
+    private double y;
 
-    public void Ponto2D() {
-        this.x = 0.0;
-        this.y = 0.0;
+    public Plano(double x, double y) {
+        this.x = x;
+        this.y = y;
     }
 
     public double getX() {
@@ -25,17 +25,11 @@ public class Plano {
         this.y = y;
     }
 
-    public Plano(double x, double y) {
-        this.x = x;
-        this.y = y;
+    public double calcularDistanciaParaOrigem() {
+        return Math.sqrt(Math.pow(x, 2) + Math.pow(y, 2));
     }
 
-    public void Origem () {
-        System.out.println("Você está na Origem");
+    public double calcularDistancia(Plano outroPonto) {
+        return Math.sqrt(Math.pow(outroPonto.x - this.x, 2) + Math.pow(outroPonto.y - this.y, 2));
     }
-
-   public void distance(ponto1, ponto2) {
-
-   }
-
 }
