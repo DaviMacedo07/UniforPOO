@@ -10,6 +10,7 @@ public class Pessoa {
         this.mae = mae;
         this.pai = pai;
     }
+
     public Pessoa(String namePerson) {
         this.namePerson = namePerson;
         this.mae = null;
@@ -32,15 +33,13 @@ public class Pessoa {
         return mae;
     }
 
-    public boolean equals(Pessoa outraPessoa) {
-        if (this.namePerson.equals(outraPessoa.namePerson)) {
-            if (this.mae == null && outraPessoa.mae == null) {
-                return  true;
-            }
-            if (this.mae != null && outraPessoa.mae != null) {
-                return  this.mae.equals(outraPessoa);
-            }
-        }
-        return false;
+    public boolean equals(Object obj) {
+        if (this == obj) return true;
+        if (obj == null || getClass() != obj.getClass()) return false;
+
+        Pessoa outraPessoa = (Pessoa) obj;
+        return this.namePerson.equals(outraPessoa.namePerson) &&
+                ((this.mae == null && outraPessoa.mae == null) ||
+                        (this.mae != null && this.mae.equals(outraPessoa.mae)));
     }
 }
