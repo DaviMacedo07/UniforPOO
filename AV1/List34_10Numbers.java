@@ -1,4 +1,4 @@
-package AV2;
+package AV1;
 
 import java.util.Scanner;
 
