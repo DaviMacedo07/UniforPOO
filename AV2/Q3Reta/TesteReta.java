@@ -3,7 +3,7 @@ package AV2.Q3Reta;
 public class TesteReta {
     public static void main(String[] args) {
         RetaClass reta1 = new RetaClass(4, 2);
-        double x = 1, y = 6;
+        double x = 3, y = 14;
         System.out.println(" Equação da reta 1: " + reta1.getEquacao());
 
 
