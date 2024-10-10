@@ -71,4 +71,6 @@ public class Matriz {
         }
         return transposta;
     }
+
+
     }
