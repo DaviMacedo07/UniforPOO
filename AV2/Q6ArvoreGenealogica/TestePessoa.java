@@ -7,12 +7,20 @@ public class TestePessoa {
         Pessoa mae3 = new Pessoa("Maria");
         Pessoa mae2 = new Pessoa("Altina");
 
-        Pessoa filho = new Pessoa("Davi ", mae, pai);
-        Pessoa filho2 = new Pessoa("Davi ", mae3, pai);
+        Pessoa filho = new Pessoa("Davi", mae, pai);
+        Pessoa filho2 = new Pessoa(null , null, null);
 
-        System.out.println("A mae de " + filho.getNamePerson() + " é : " + mae.getNamePerson());
+        System.out.println("A mãe de " + filho.getNamePerson() + " é : " + mae.getNamePerson());
         System.out.println("O pai de " + filho.getNamePerson() + " é : " + pai.getNamePerson());
 
-        System.out.println("Filho é igual a Filho2? " + filho.equals(filho2) );
+        boolean resultado = false;
+
+        try {
+            resultado = filho.equals(filho2);
+        } catch (Exception e) {
+            System.out.println("Deu erro ao comparar: "+  e.getMessage());
+        }
+
+        System.out.println("Filho é igual a Filho2? " + resultado);
     }
 }
